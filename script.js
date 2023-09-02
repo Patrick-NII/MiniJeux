@@ -19,3 +19,4 @@ guessButton.addEventListener('click', () => {
     message.textContent = 'Le nombre est plus petit. Essayez encore.';
   }
 });
+

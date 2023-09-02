@@ -1,0 +1,69 @@
+/* Styles de base pour le corps de la page */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #f9ecd9; /* Couleur de fond */
+  text-align: center;
+  padding: 20px;
+}
+
+/* Titre principal */
+h1 {
+  color: #ff6f61; /* Couleur du titre */
+  font-size: 36px;
+}
+
+/* Champ de saisie */
+input[type="text"] {
+  padding: 5px;
+  font-size: 18px;
+  border: 2px solid #ff6f61; /* Bordure */
+  border-radius: 5px;
+}
+
+/* Bouton de devinette */
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #ff6f61; /* Couleur de fond du bouton */
+  color: white; /* Couleur du texte du bouton */
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Message résultat */
+p#message {
+  font-size: 24px;
+  color: #ff6f61; /* Couleur du message */
+}
+
+/* Style du paragraphe de consigne */
+p {
+  font-size: 20px;
+  color: #333; /* Couleur du texte */
+}
+
+
+/* Style pour les confettis */
+.confetti {
+    width: 10px;
+    height: 10px;
+    background: #ff6f61;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(0);
+    animation: confettiAnimation 0.5s ease-out forwards;
+  }
+  
+  /* Animation des confettis */
+  @keyframes confettiAnimation {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(300px) rotate(180deg);
+    }
+  }
+  
